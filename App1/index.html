@@ -4,10 +4,33 @@
     <meta charset="utf-8" />
     <title>App1</title>
     <link href="css/default.css" rel="stylesheet" />
+    <script>
+        var calculator = {
+            sum: 0,
+            starter: 1109,
+            stepdown: 11,
+            stopnumber: 119,
+
+            adder: function ()
+            {
+                for (counter = this.starter; counter > this.stopnumber;)
+                {
+                    this.sum += counter;
+                    counter -= this.stepdown;
+                    
+                }
+                return this.sum;
+
+            }
+        };
+            document.write(calculator.adder());
+    
+    </script>
 </head>
+
 <body>
-    <div>Content goes here!
-    hey there!</div>
+    <div>Calculator</div>
     <script src="js/main.js"></script>
+
 </body>
 </html>
