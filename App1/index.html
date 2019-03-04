@@ -11,21 +11,37 @@
             stepdown: 11,
             stopnumber: 119,
 
-            adder: function ()
-            {
-                for (counter = this.starter; counter > this.stopnumber;)
-                {
+            adder: function () {
+                for (counter = this.starter; counter > this.stopnumber;) {
                     this.sum += counter;
                     counter -= this.stepdown;
-                    
+
                 }
                 return this.sum;
 
             }
         };
-            document.write(calculator.adder());
-    
+        document.write(calculator.adder());
     </script>
+
+        <script>
+            var calculator1 = {
+
+                addup: function (start, end, step) 
+                 {
+                    let sum1 = 0;
+                    
+                    for (counter1 = this.start; counter1 > this.end; counter1 -= this.step)
+                    {
+                        this.sum1 += counter1;
+                    }
+                    return this.sum1;
+                }
+        };
+document.write(calculator.addup(1109, 119, 11));
+    </script>
+    
+   
 </head>
 
 <body>
